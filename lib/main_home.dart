@@ -1,3 +1,4 @@
+import 'package:elearning/Lectures.dart';
 import 'package:elearning/api/pdf_paragrah_api.dart';
 import 'package:elearning/notification_page.dart';
 import 'package:elearning/teacher_page.dart';
@@ -89,10 +90,8 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           InkWell(
-            onTap: () async {
-              final pdfFile = await PdfParagraphApi.generate();
-              PdfApi.openFile(pdfFile);
-            },
+            onTap: () => Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => Lectures())),
             child: Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
@@ -101,7 +100,10 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           InkWell(
-            onTap: () {},
+            onTap: () async {
+              final pdfFile = await PdfParagraphApi.generate();
+              PdfApi.openFile(pdfFile);
+            },
             child: Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
