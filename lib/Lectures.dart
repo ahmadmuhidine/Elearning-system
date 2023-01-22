@@ -37,7 +37,7 @@ class Lectures extends StatelessWidget {
                           builder: (context) => LessonExplanation1()));
                 },
                 child: Text(
-                  "1. Software Engineering",
+                  "Lecture 1",
                   style: TextStyle(
                     color: Colors.blue.shade800,
                     fontSize: 18,
@@ -61,7 +61,7 @@ class Lectures extends StatelessWidget {
                 ),
                 onPressed: () {},
                 child: Text(
-                  "2. Software Engineering 2",
+                  "Lecture 2",
                   style: TextStyle(
                     color: Colors.blue.shade800,
                     fontSize: 18,
@@ -85,7 +85,7 @@ class Lectures extends StatelessWidget {
                 ),
                 onPressed: () {},
                 child: Text(
-                  "3. Life development cycle",
+                  "Lecture 3",
                   style: TextStyle(
                     color: Colors.blue.shade800,
                     fontSize: 18,
@@ -109,7 +109,7 @@ class Lectures extends StatelessWidget {
                 ),
                 onPressed: () {},
                 child: Text(
-                  "4. Program development models",
+                  "Lecture 4",
                   style: TextStyle(
                     color: Colors.blue.shade800,
                     fontSize: 18,
@@ -133,7 +133,7 @@ class Lectures extends StatelessWidget {
                 ),
                 onPressed: () {},
                 child: Text(
-                  "5. Program development models 2",
+                  "Lecture 5",
                   style: TextStyle(
                     color: Colors.blue.shade800,
                     fontSize: 18,
@@ -157,7 +157,7 @@ class Lectures extends StatelessWidget {
                 ),
                 onPressed: () {},
                 child: Text(
-                  "6. Program development models 3",
+                  "Lecture 6",
                   style: TextStyle(
                     color: Colors.blue.shade800,
                     fontSize: 18,
@@ -181,7 +181,7 @@ class Lectures extends StatelessWidget {
                 ),
                 onPressed: () {},
                 child: Text(
-                  "7. Verification and validation of the program",
+                  "Lecture 6",
                   style: TextStyle(
                     color: Colors.blue.shade800,
                     fontSize: 18,
@@ -202,7 +202,7 @@ class Lectures extends StatelessWidget {
                 ),
                 onPressed: () {},
                 child: Text(
-                  "8. Verification and validation of the program 2",
+                  "Lecture 8",
                   style: TextStyle(
                     color: Colors.blue.shade800,
                     fontSize: 18,
