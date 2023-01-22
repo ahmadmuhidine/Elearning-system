@@ -28,6 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
           "What is your Occupation",
           style: TextStyle(
             fontFamily: 'OpenSans',
+            fontWeight: FontWeight.bold,
             fontSize: 18,
           ),
         ),
@@ -57,6 +58,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   "Teacher",
                   style: TextStyle(
                     color: Colors.white,
+                    fontFamily: 'OpenSans',
+                    fontWeight: FontWeight.bold,
                     fontSize: 18,
                   ),
                 ),
@@ -80,6 +83,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   "Student",
                   style: TextStyle(
                     color: Colors.white,
+                    fontFamily: 'OpenSans',
+                    fontWeight: FontWeight.bold,
                     fontSize: 18,
                   ),
                 ),
