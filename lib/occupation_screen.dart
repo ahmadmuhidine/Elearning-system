@@ -24,7 +24,13 @@ class _LoginScreenState extends State<LoginScreen> {
         backgroundColor: Colors.blue.shade800,
         shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(bottom: Radius.circular(30))),
-        title: Text("What is your Occupation"),
+        title: Text(
+          "What is your Occupation",
+          style: TextStyle(
+            fontFamily: 'OpenSans',
+            fontSize: 18,
+          ),
+        ),
         centerTitle: true,
       ),
       body: Container(

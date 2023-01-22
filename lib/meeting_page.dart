@@ -6,16 +6,12 @@ class MeetingPage extends StatelessWidget {
   const MeetingPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: Container(
-        child: Column(
+  Widget build(BuildContext context) => Center(
+        child: ListView(
+          padding: EdgeInsets.all(32),
           children: [
-            Text('Chang'),
+            const SizedBox(height: 24),
           ],
         ),
-      ),
-    );
-  }
+      );
 }

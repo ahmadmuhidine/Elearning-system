@@ -38,6 +38,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   pdf: ^3.8.4
 
+  google_fonts: ^1.0.2
+
 
   path_provider: ^2.0.11
 
@@ -80,6 +82,11 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  fonts: 
+    - family: OpenSans
+      fonts:
+      - asset: assets/OpenSans-VariableFont_wdth,wght.ttf
 
   # To add assets to your application, add an assets section, like this:
   assets:
