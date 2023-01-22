@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:io/ansi.dart';
 import 'dart:ui' as ui;
 // import 'package:pdf/widgets.dart';
+import 'StudentLoginScreenDetails.dart';
 import 'api/pdf_api.dart';
 
 class HomePage extends StatefulWidget {
@@ -227,7 +228,8 @@ class NavigationDrawer extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.exit_to_app),
             title: const Text('Exit'),
-            onTap: (() {}),
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => const StudentLoginScreenDetails())),
           )
         ],
       );

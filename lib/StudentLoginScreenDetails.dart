@@ -3,6 +3,8 @@ import 'package:elearning/StudentRegistration.dart';
 import 'package:elearning/forgetPassword_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'main_home.dart';
+
 class StudentLoginScreenDetails extends StatelessWidget {
   const StudentLoginScreenDetails({Key? key}) : super(key: key);
 
@@ -63,7 +65,7 @@ class StudentLoginScreenDetails extends StatelessWidget {
                     ),
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Lectures()));
+                          MaterialPageRoute(builder: (context) => HomePage()));
                     },
                     child: Text(
                       "Login",
