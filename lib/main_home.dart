@@ -112,7 +112,8 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           InkWell(
-            onTap: () {},
+            onTap: () => Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => Lectures())),
             child: Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
@@ -121,21 +122,24 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           InkWell(
-              onTap: () {},
+              onTap: () => Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => Lectures())),
               child: Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage("images/inter6.png"))))),
           InkWell(
-              onTap: () {},
+              onTap: () => Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => Lectures())),
               child: Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage("images/inter7.png"))))),
           InkWell(
-              onTap: () {},
+              onTap: () => Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => Lectures())),
               child: Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(

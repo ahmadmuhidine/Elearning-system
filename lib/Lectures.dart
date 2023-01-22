@@ -59,7 +59,8 @@ class Lectures extends StatelessWidget {
                     right: 90,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const Lectures())),
                 child: Text(
                   "Lecture 2",
                   style: TextStyle(
