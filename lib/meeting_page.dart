@@ -12,7 +12,7 @@ class MeetingPage extends StatelessWidget {
       body: Container(
         child: Column(
           children: [
-            Text('Changes'),
+            Text('Chang'),
           ],
         ),
       ),
