@@ -2,7 +2,6 @@ import 'package:elearning/Lectures.dart';
 import 'package:elearning/StudentRegistration.dart';
 import 'package:elearning/forgetPassword_screen.dart';
 import 'package:flutter/material.dart';
-
 import 'main_home.dart';
 
 class StudentLoginScreenDetails extends StatelessWidget {
@@ -19,7 +18,12 @@ class StudentLoginScreenDetails extends StatelessWidget {
             borderRadius: BorderRadius.vertical(bottom: Radius.circular(30))),
         title: Text(
           "Login as a Student",
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: TextStyle(
+            color: Colors.white,
+            fontFamily: 'OpenSans',
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+          ),
         ),
         centerTitle: true,
       ),
@@ -71,6 +75,8 @@ class StudentLoginScreenDetails extends StatelessWidget {
                       "Login",
                       style: TextStyle(
                         color: Colors.white,
+                        fontFamily: 'OpenSans',
+                        fontWeight: FontWeight.bold,
                         fontSize: 18,
                       ),
                     ),
@@ -101,7 +107,8 @@ class StudentLoginScreenDetails extends StatelessWidget {
                 "Dont have an account?",
                 style: TextStyle(
                   color: Colors.grey,
-                  fontSize: 20,
+                  fontFamily: 'OpenSans',
+                  fontSize: 18,
                 ),
               ),
             ),
@@ -111,6 +118,7 @@ class StudentLoginScreenDetails extends StatelessWidget {
                 child: Text(
                   "Register",
                   style: TextStyle(
+                    fontFamily: 'OpenSans',
                     color: Colors.blue.shade800,
                     fontSize: 20,
                   ),

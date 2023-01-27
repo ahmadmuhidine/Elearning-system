@@ -5,7 +5,6 @@ import 'package:elearning/teacher_page.dart';
 import 'package:flutter/material.dart';
 import 'package:io/ansi.dart';
 import 'dart:ui' as ui;
-// import 'package:pdf/widgets.dart';
 import 'StudentLoginScreenDetails.dart';
 import 'api/pdf_api.dart';
 
@@ -20,6 +19,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 0, 98, 179),
         shape: const RoundedRectangleBorder(
@@ -45,28 +45,53 @@ class _HomePageState extends State<HomePage> {
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(110.0),
           child: Container(
-            padding: const EdgeInsets.only(left: 30, bottom: 20, right: 30),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            padding:
+                const EdgeInsets.only(left: 30, top: 10, bottom: 20, right: 30),
+            child: Column(
               children: [
-                Text(
-                  'THIRD YEAR',
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
+                Container(
+                  margin: const EdgeInsets.fromLTRB(16, 5, 12, 18),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      contentPadding: EdgeInsets.fromLTRB(5, 5, 5, 5),
+                      prefixIcon: const Icon(Icons.search),
+                      hintText: 'Book Title',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(100),
+                        borderSide: BorderSide.none,
+                      ),
+                      filled: true,
+                      fillColor: Colors.white,
+                    ),
                   ),
-                  textAlign: TextAlign.left,
                 ),
-                Text(
-                  'SEMESTER 5',
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'THIRD YEAR',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontFamily: 'OpenSans',
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                      Text(
+                        'SEMESTER 5',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontFamily: 'OpenSans',
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.right,
+                      ),
+                    ],
                   ),
-                  textAlign: TextAlign.right,
-                ),
+                )
               ],
             ),
           ),
@@ -179,6 +204,7 @@ class NavigationDrawer extends StatelessWidget {
               'Ahmad Muhidine',
               style: TextStyle(
                 fontSize: 25,
+                fontFamily: 'OpenSans',
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
